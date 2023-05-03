@@ -15,7 +15,7 @@
         <div class="col-5">
             <div class="card p-3 bg-dark txt-light">
 
-                <form action="script.php" method="post">
+                <form action="script.php" method="get">
 
                     <div class="mb-3">
                         <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
