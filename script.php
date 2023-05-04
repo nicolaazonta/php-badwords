@@ -12,7 +12,7 @@ $content = $_GET['textContent']; //recupero il paragrafo
 
 $NotYetCensored = $_GET['censoredWord']; //recupero la parola da censurare
 
-$censored = str_replace("cacao","***","$NotYetCensored");
+$censored = str_replace("$NotYetCensored","***","$content");
 
 ?>
 
@@ -40,7 +40,8 @@ $censored = str_replace("cacao","***","$NotYetCensored");
                 </div>
 
                 <div class="mb-3">
-                    <h1 class="text-light">censored: <?php echo $censored ?> </h1>
+                    <h2 class="text-light">censored: <?php echo $censored ?> </h2>
+                    <p class="text-light">paragraph length: <?php echo strlen($censored) ?></p>
 
                 </div>
 
